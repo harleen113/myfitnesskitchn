@@ -1,7 +1,40 @@
-body{
-    font-family: sans-serif;
+html{
+    box-sizing: border-box;
+}
+*,*:before,*:after{
+    box-sizing: inherit;
+}
+
+.orderconfirmation{
+    display: flex;
     justify-content: center;
     align-items: center;
-    display: flex;
-
+    font-family: sans-serif;
+    margin: 0;
+    min-height: 100vh;
+    background-color: white;
 }
+
+.orderline_1{
+    border-radius: 10px;
+    padding: 4rem;
+    text-align: center;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
+}
+
+.orderline_2{
+    border-radius: 10px;
+    padding: 4rem;
+    text-align: center;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
+}
+
+.thankyou_line{
+    margin-bottom: 1em;
+    font-size: 2em;
+}
+

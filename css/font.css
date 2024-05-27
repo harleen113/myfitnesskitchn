@@ -5,6 +5,7 @@ html{
     box-sizing: inherit;
 }
 
+/* order confirmation */
 .order{
     display: flex;
     justify-content: center;
@@ -35,6 +36,7 @@ html{
     margin: 10px;
 }
 
+/* order confirmation buttons */
 .button_grey{
     display: inline-block;
     background-color: #4CAF50;
@@ -58,4 +60,20 @@ html{
     padding: 15px 32px;
     font-size: 16px;
     border-radius: 5px;
+}
+
+/* check out page delivery form */
+.checkout{
+    margin: 20px;
+    font-family: sans-serif;
+}
+
+label{
+    display: block;
+    margin-bottom: 5px;
+}
+
+.delivery-form{
+    margin-bottom: 16px;
+    display: block;
 }

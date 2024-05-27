@@ -5,7 +5,7 @@ html{
     box-sizing: inherit;
 }
 
-.orderconfirmation{
+.order{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,16 +15,7 @@ html{
     background-color: white;
 }
 
-.orderline_1{
-    border-radius: 10px;
-    padding: 4rem;
-    text-align: center;
-    background-color: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    
-}
-
-.orderline_2{
+.orderconfirmation{
     border-radius: 10px;
     padding: 4rem;
     text-align: center;
@@ -38,3 +29,33 @@ html{
     font-size: 2em;
 }
 
+.confirmation-buttons{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.button_grey{
+    display: inline-block;
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    border: none;
+    text-decoration: none;
+    margin: 4px 2px;
+    padding: 15px 32px;
+    font-size: 16px;
+    border-radius: 5px;
+}
+.button_green{
+    display: inline-block;
+    background-color: grey;
+    color: white;
+    text-align: center;
+    border: none;
+    text-decoration: none;
+    margin: 4px 2px;
+    padding: 15px 32px;
+    font-size: 16px;
+    border-radius: 5px;
+}

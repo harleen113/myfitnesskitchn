@@ -26,7 +26,7 @@ html{
 }
 
 .thankyou_line{
-    margin-bottom: 1em;
+    margin-bottom: 20px;
     font-size: 2em;
 }
 
@@ -39,6 +39,19 @@ html{
 /* order confirmation buttons */
 .button_grey{
     display: inline-block;
+    background-color:grey;
+    color: white;
+    text-align: center;
+    border: none;
+    text-decoration: none;
+    margin: 4px 2px;
+    padding: 15px 32px;
+    font-size: 16px;
+    border-radius: 5px 0 0 5px;
+    box-sizing: border-box;
+}
+.button_green{
+    display: inline-block;
     background-color: #4CAF50;
     color: white;
     text-align: center;
@@ -47,11 +60,105 @@ html{
     margin: 4px 2px;
     padding: 15px 32px;
     font-size: 16px;
-    border-radius: 5px;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
 }
-.button_green{
-    display: inline-block;
+
+/* check out page delivery form */
+.checkout{
+    background-color:white;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+.checkoutpage{
+    padding: 20px;
+    border-radius: 10px;
+    width: 450px;
+    background-color: white;
+}
+
+h2{
+    margin-bottom: 15px;
+    font-size: 1.5em;
+}
+
+.delivery-form{
+    gap: 10px;
+    margin-bottom: 20px;
+    display: flex;
+}
+.delivery-form input[type="text"]{
+    flex: 1;
+    border: 1px solid;
+    border-radius: 2px;
+    padding: 10px;
+}
+
+.delivery-form input[type="checkbox"]{
     background-color: grey;
+    margin-top: 8px;
+    margin-right: 5px;
+}
+/* progress indicator */
+.progress-indicator{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+}
+.inactive{
+    position: relative;
+    text-align: center;
+}
+.inactive::before{
+    background-color: grey;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    height: 2px;
+    width: 100%;
+}
+.inactive:first-child::before{
+    left: 70%;
+    width: 50%;
+}
+.sphere{
+    color: white;
+    background-color: grey;
+    height: 50px ;
+    width: 50px;
+    display: flex;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    font-size: 1.2em;
+}
+.activesphere{
+    background-color: #4CAF50;
+    color: white;
+    height: 50px ;
+    width: 50px;
+    display: flex;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    font-size: 1.2em;
+}
+.text{
+    font-size: 1em;
+    margin-top: 10px;
+}
+/* checkout page buttons */
+.button-grey{
+    display: inline-block;
+    background-color:grey;
     color: white;
     text-align: center;
     border: none;
@@ -59,25 +166,19 @@ html{
     margin: 4px 2px;
     padding: 15px 32px;
     font-size: 16px;
-    border-radius: 5px;
+    border-radius: 5px 0 0 5px;
+    box-sizing: border-box;
 }
-
-/* check out page delivery form */
-.checkout{
-    margin: 20px;
-    font-family: sans-serif;
-}
-
-label{
-    display: block;
-    margin-bottom: 5px;
-}
-
-.delivery-form{
-    margin-bottom: 16px;
-    display: block;
-}
-.billingaddress{
-    background-color: grey;
-    align-items:left;
+.button-green{
+    display: inline-block;
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    border: none;
+    text-decoration: none;
+    margin: 4px 2px;
+    padding: 15px 32px;
+    font-size: 16px;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
 }

@@ -4,10 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>checkout page</title>
-    <link rel="stylesheet" href="font.css">
-    <link rel="stylesheet" href="colour.css">
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body class="checkout">
+    <!-- progress indicator on the checkout page -->
+<div class ="progress-indicator">
+    <div class = "steps">
+        <div class = "active">
+            <div class ="activesphere">1</div>
+            <div class ="text">Shipping</div>
+        </div>
+        <div class = "inactive">
+            <div class ="sphere">2</div>
+            <div class ="text">Payment</div>
+        </div>
+        <div class = "inactive">
+            <div class ="sphere">3</div>
+            <div class ="text">Review</div>
+        </div>
+    </div>
+</div>
+    <!-- Delivery Address Form -->
+    <div class = "checkoutpage">
     <h2>Delivery Address</h2>
     <form>
         <div class = "delivery-form">
@@ -31,7 +49,13 @@
         <div class = "delivery-form">
             <label for="billingaddress">Use as billing address</label>
             <input type="checkbox" id="billingaddress" name = "billingaddress">
+        </div>
     </form>
-    
+    <!-- Checkout page buttons -->
+    <div class="checkoutpage-buttons">
+        <button class = "button-green">Proceed to Payment</button>
+        <button class = "button-grey">Back to shopping cart</button>
+    </div>
+</div>
 </body>
 </html>

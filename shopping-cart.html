@@ -7,6 +7,58 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    
+    <h1>Shopping Cart</h1>
+    <!--shopping cart page product list-->
+    <table class = "shopping-list">
+        <tr>
+            <th> Product Details</th>
+            <th>Quantity</th>
+            <th>Price</th>
+        </tr>
+        <tr>
+            <td><button class = "red-button">x</button><img src="https://www.myfitnesskitchn.com.au/wordpress/wp-content/uploads/2024/02/lamb-hommus-main-1.jpg" alt="Mediterranean Lamb bowl" style="width:100px;height:100px;">Mediterranean Lamb bowl</td>
+            <td><button class = "minus-button">-</button>1<button class = "plus-button">+</button></td>
+            <td>$11.95</td>
+        </tr>
+        <tr>
+            <td><button class = "red-button">x</button><img src="https://www.myfitnesskitchn.com.au/wordpress/wp-content/uploads/2022/11/parmigiana-mash-23.jpg" alt="Chicken Risotto in Red Sauce" style="width:100px;height:100px;">Chicken Risotto in Red Sauce</td>
+            <td><button class = "minus-button">-</button>2<button class = "plus-button">+</button></td>
+            <td>$21.90</td>
+        </tr>
+        <tr>
+            <td><button class = "red-button">x</button><img src="https://www.myfitnesskitchn.com.au/wordpress/wp-content/uploads/2018/01/hokkien-new-1.jpg" alt="Vegetable hokkien noodles" style="width:100px;height:100px;">Vegetable hokkien noodles</td>
+            <td><button class = "minus-button">-</button>1<button class = "plus-button">+</button></td>
+            <td>$13.95</td> 
+        </tr>
+    </table>
+     <!-- order summmary details on the shopping cart page-->
+     <div class = "Checkout-summary">
+        <section>
+            <h3>Order summary</h3>
+                <ul>
+                    <aside class="order-details">Subtotal:  $56.90</aside>
+                </ul>
+                <ul>
+                <label for="deliveryoptions">Delivery</label>
+                <select name="delivery options" id="delivery">
+                    <option value="Standard">Standard</option>
+                    <option value="fast Shipping">fast shipping</option>
+                </select>
+                </ul>
+                <ul>
+                    <label for="discount">Enter promo code</label>
+                    <input type="text" id="discount" name = "discount">
+                </ul>
+                <hr>
+                <ul>
+                    <aside class="order-details">Total:  $65.89</aside>
+                </ul>   
+        </section>
+        </div> 
+        <!-- Shopping Cart page buttons -->
+    <div class="checkoutpage-buttons">
+        <button class = "grey-button">Back to Shopping</button>
+        <button class = "green-button">Checkout</button>
+    </div>
 </body>
 </html>

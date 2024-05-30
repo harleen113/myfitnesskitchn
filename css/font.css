@@ -5,7 +5,7 @@ html{
     box-sizing: inherit;
 }
 
-/* order confirmation */
+/* Order Confirmation Page*/
 .order{
     display: flex;
     justify-content: center;
@@ -64,7 +64,13 @@ html{
     cursor: pointer;
 }
 
-/* check out page delivery form */
+/* Checkout page */
+/*Delivery Form*/
+h2{
+    margin-bottom: 15px;
+    font-size: 1.5em;
+}
+
 .checkout{
     background-color:white;
     align-items: center;
@@ -80,11 +86,6 @@ html{
     border-radius: 10px;
     width: 450px;
     background-color: white;
-}
-
-h2{
-    margin-bottom: 15px;
-    font-size: 1.5em;
 }
 
 .delivery-form{
@@ -104,7 +105,7 @@ h2{
     margin-top: 8px;
     margin-right: 5px;
 }
-/* progress indicator */
+/* progress indicator on Checkout Page */
 .progress-indicator{
     align-items: center;
     display: flex;
@@ -207,8 +208,8 @@ h2{
     font-weight: bold;
     width: 50%;
 }
-
-/* Shopping cart list page */
+/* Shopping Cart Page*/
+/* Product table on shopping cart page */
 .shopping-list{
     border-color: black;
     border-radius: 5px;
@@ -235,6 +236,38 @@ h2{
     align-self: center;
     float: center;
     margin-right: 20px;
+}
+/* remove button on product table in shopping cart page*/
+.red-button{
+    text-align: center;
+    border: none;
+    float: left;
+    border-radius: 50%;
+    color: white;
+    background-color: red;
+    cursor: pointer;
+}
+
+/* reduce quantity button on product table in shopping cart page*/
+.minus-button{
+    text-align: center;
+    border: none;
+    margin-right: 10px;
+    border-radius: 50%;
+    color: black;
+    background-color: #D9D9D9; 
+    cursor: pointer;
+}
+
+/* increase quantity button on product table in shopping cart page*/
+.plus-button{
+    text-align: center;
+    border: none;
+    margin-left: 10px;
+    border-radius: 50%;
+    color: black;
+    background-color: #D9D9D9; 
+    cursor: pointer;
 }
 /* Shopping cart page buttons */
 .grey-button{
@@ -264,19 +297,56 @@ h2{
     cursor: pointer;
 }
 
-/* remove button*/
-.red-button{
-    text-align: center;
-    border: none;
+/*Menu Page*/
+/*search bar on Menu Page*/
+.search-option{
+    width: 700px;
+    height: 30px;
+    background-color: white;
+    display: flex;
+    border-radius: 7px solid;
+}
+.search-option input[type="text"]{
+    color: black;
+    width: 100%;
     float: left;
-    border-radius: 50%;
-    color: white;
-    background-color: red;
+    padding: 10px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+/*filter and sort dropdown options on Menu Page*/
+.drop-down{
+    float: right;
+    margin: 2px;
+    display: flex;
+}
+.filter-option{
+    display: inline-block;
+    position: relative;
+    margin: 2px;
+}
+.sort-option{
+    display: inline-block;
+    position: relative;
+    margin: 2px;
+}
+
+/*meal options on Menu Page*/
+.meal-options td{
+    background-color:#D9D9D9;
+    margin-top: 10px;
+    float: left;
+    border-radius: 3px;
+    border: 1px solid;
+    text-align: center;
+    padding: 5px;
     cursor: pointer;
 }
 
-/* remove item from the quantity*/
-.minus-button{
+
+/* reduce quantity button on in menu page*/
+.menu-minus-button{
+    margin-left: 110px;
     text-align: center;
     border: none;
     margin-right: 10px;
@@ -286,8 +356,8 @@ h2{
     cursor: pointer;
 }
 
-/* add item in the quantity*/
-.plus-button{
+/* increase quantity button in menu page*/
+.menu-plus-button{
     text-align: center;
     border: none;
     margin-left: 10px;

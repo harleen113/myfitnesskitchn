@@ -7,6 +7,47 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body class = "order">
+    <header>
+        <div class="navbar">
+            <div class="logo"><a href="index.html">My Kitchn Fitness</a></div>
+            <div class="toggle-btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <ul class="links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="menu.html">Order</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+            <div class="icons">
+            <a href="shopping-cart.html" class="shopping-cart-btn"><i class="fa-solid fa-bag-shopping"></i></a>
+            <a href="#" class="profile-btn"><i class="fa-solid fa-user"></i></a>
+            </div>
+        </div>
+
+        <div class="dropdown-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="menu.html">Order</a></li>
+            <li><a href="#">Contact us</a></li>
+        </div>
+    </header>
+
+    <script>
+        const toggleBtn = document.querySelector(".toggle-btn")
+        const toggleBtnIcon = document.querySelector('.toggle-btn i')
+        const dropDownMenu = document.querySelector(".dropdown-menu")
+
+        toggleBtn.onclick = function () {
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+
+            toggleBtnIcon.classList = isOpen
+            ? 'fa-solid fa-xmark'
+            : 'fa-solid fa-bars'
+        }
+    </script>
+    
     <div class="orderconfirmation">
     <h1 class="thankyou_line">THANK YOU !</h1>
     <P>A confirmation has been sent to your email. Your order number is #7492795.</P>  

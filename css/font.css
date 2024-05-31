@@ -34,17 +34,11 @@ html{
     font-size: 2em;
 }
 
-.confirmation-buttons{
-    display: flex;
-    justify-content: space-between;
-    margin: 10px;
-}
-
 /* order confirmation buttons */
 .button_grey{
     display: inline-block;
     background-color:#D9D9D9;
-    color: white;
+    color: black;
     text-align: center;
     border: none;
     text-decoration: none;
@@ -164,7 +158,7 @@ h2{
 .button-grey{
     display: inline-block;
     background-color:#D9D9D9;
-    color: white;
+    color: black;
     text-align: center;
     border: none;
     text-decoration: none;
@@ -224,14 +218,15 @@ h2{
 }
 
 .shopping-list th{
-    border-radius: 5px;
+    border-radius: 7px;
     border: 1.5px solid;
     text-align: center;
     padding: 12px;
 }
 
 .shopping-list td{
-    border: none;
+    border-radius: 7px;
+    border: 1.5px solid;
     text-align: center;
     padding: 12px;
 }
@@ -246,7 +241,9 @@ h2{
     text-align: center;
     border: none;
     float: left;
-    border-radius: 70%;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
     color: white;
     background-color: red;
     cursor: pointer;
@@ -256,6 +253,8 @@ h2{
 .minus-button{
     text-align: center;
     border: none;
+    width: 20px;
+    height: 20px;
     margin-right: 10px;
     border-radius: 50%;
     color: black;
@@ -267,6 +266,8 @@ h2{
 .plus-button{
     text-align: center;
     border: none;
+    width: 20px;
+    height: 20px;
     margin-left: 10px;
     border-radius: 50%;
     color: black;
@@ -335,6 +336,210 @@ h2{
     margin: 2px;
 }
 
+/*product items on Menu Page*/
+.menu-products{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 60%;
+    padding: 5px;
+}
+
+.h4{
+    margin-bottom: 7px;
+}
+
+.item1{
+    width: 40%;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 7px;
+    border: 2px solid;
+    text-align: center;
+}
+
+.item1 img{
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.item1-info{
+    text-align: center;
+}
+
+
+.item2{
+    width: 40%;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 7px;
+    border: 2px solid;
+    text-align: center;
+}
+.item2 img{
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.item2-info{
+    text-align: center;
+}
+.item3{
+    width: 40%;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 7px;
+    border: 2px solid;
+    text-align: center;
+}
+.item3 img{
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.item3-info{
+    text-align: center;
+}
+
+.item4{
+    width: 40%;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 7px;
+    border: 2px solid;
+    text-align: center;
+}
+.item4 img{
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.item4-info{
+    text-align: center;
+}
+
+.item5{
+    width: 40%;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 7px;
+    border: 2px solid;
+    text-align: center;
+}
+.item5 img{
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.item5-info{
+    text-align: center;
+}
+
+.item6{
+    width: 40%;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 7px;
+    border: 2px solid;
+    text-align: center;
+}
+.item6 img{
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.item6-info{
+    text-align: center;
+}
+
+.item7{
+    width: 40%;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 7px;
+    border: 2px solid;
+    text-align: center;
+}
+.item7 img{
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.item7-info{
+    text-align: center;
+}
+
+.item8{
+    width: 40%;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 7px;
+    border: 2px solid;
+    text-align: center;
+}
+.item8 img{
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.item8-info{
+    text-align: center;
+}
+
+.item9{
+    width: 40%;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 7px;
+    border: 2px solid;
+    text-align: center;
+}
+.item9 img{
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.item9-info{
+    text-align: center;
+}
+
+.item10{
+    width: 40%;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 7px;
+    border: 2px solid;
+    text-align: center;
+}
+.item10 img{
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.item10-info{
+    text-align: center;
+}
+
 /*meal options on Menu Page*/
 .meal-options td{
     background-color:#D9D9D9;
@@ -350,11 +555,13 @@ h2{
 
 /* reduce quantity button on in menu page*/
 .menu-minus-button{
+    border-radius: 50%;
     margin-left: 110px;
+    width: 20px;
+    height: 20px;
     text-align: center;
     border: none;
     margin-right: 10px;
-    border-radius: 70%;
     color: black;
     background-color: #D9D9D9; 
     cursor: pointer;
@@ -364,9 +571,13 @@ h2{
 .menu-plus-button{
     text-align: center;
     border: none;
+    width: 20px;
+    height: 20px;
     margin-left: 10px;
-    border-radius: 70%;
+    border-radius: 50%;
     color: black;
     background-color: #D9D9D9; 
     cursor: pointer;
 }
+
+/* page button in menu page*/

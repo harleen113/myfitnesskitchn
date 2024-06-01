@@ -304,7 +304,12 @@ h2{
 
 /*Menu Page*/
 /*search bar on Menu Page*/
+h1{
+    margin: 2px;
+}
 .search-option{
+    margin-top: 5px;
+    margin: 2px;
     width: 700px;
     height: 30px;
     background-color: white;
@@ -312,6 +317,8 @@ h2{
     border-radius: 7px solid;
 }
 .search-option input[type="text"]{
+    margin-top: 5px;
+    margin: 2px;
     color: black;
     width: 100%;
     float: left;
@@ -319,21 +326,44 @@ h2{
     font-size: 16px;
     box-sizing: border-box;
 }
+
 /*filter and sort dropdown options on Menu Page*/
 .drop-down{
-    float: right;
+    margin-top: 5px;
     margin: 2px;
     display: flex;
 }
 .filter-option{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 5px;
     display: inline-block;
     position: relative;
     margin: 2px;
 }
 .sort-option{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 5px;
     display: inline-block;
     position: relative;
     margin: 2px;
+}
+
+/*meal options on Menu Page*/
+.meal-options{
+    margin: 2px;
+    margin-top: 5px;
+}
+.meal-options td{
+    background-color:#D9D9D9;
+    margin-top: 10px;
+    float: left;
+    border-radius: 3px;
+    border: 1px solid;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
 }
 
 /*product items on Menu Page*/
@@ -350,6 +380,7 @@ h2{
 }
 
 .item1{
+    float: center;
     width: 40%;
     margin: 10px;
     padding: 10px;
@@ -371,6 +402,7 @@ h2{
 
 
 .item2{
+    float: center;
     width: 40%;
     margin: 10px;
     padding: 10px;
@@ -389,6 +421,7 @@ h2{
     text-align: center;
 }
 .item3{
+    float: center;
     width: 40%;
     margin: 10px;
     padding: 10px;
@@ -408,6 +441,7 @@ h2{
 }
 
 .item4{
+    float: center;
     width: 40%;
     margin: 10px;
     padding: 10px;
@@ -427,6 +461,7 @@ h2{
 }
 
 .item5{
+    float: center;
     width: 40%;
     margin: 10px;
     padding: 10px;
@@ -446,6 +481,7 @@ h2{
 }
 
 .item6{
+    float: center;
     width: 40%;
     margin: 10px;
     padding: 10px;
@@ -465,6 +501,7 @@ h2{
 }
 
 .item7{
+    float: center;
     width: 40%;
     margin: 10px;
     padding: 10px;
@@ -484,6 +521,7 @@ h2{
 }
 
 .item8{
+    float: center;
     width: 40%;
     margin: 10px;
     padding: 10px;
@@ -503,6 +541,7 @@ h2{
 }
 
 .item9{
+    float: center;
     width: 40%;
     margin: 10px;
     padding: 10px;
@@ -522,6 +561,7 @@ h2{
 }
 
 .item10{
+    float: center;
     width: 40%;
     margin: 10px;
     padding: 10px;
@@ -539,19 +579,6 @@ h2{
 .item10-info{
     text-align: center;
 }
-
-/*meal options on Menu Page*/
-.meal-options td{
-    background-color:#D9D9D9;
-    margin-top: 10px;
-    float: left;
-    border-radius: 3px;
-    border: 1px solid;
-    text-align: center;
-    padding: 5px;
-    cursor: pointer;
-}
-
 
 /* reduce quantity button on in menu page*/
 .menu-minus-button{
@@ -581,3 +608,28 @@ h2{
 }
 
 /* page button in menu page*/
+.page-number{
+    display: flex;
+    position: absolute;
+    margin-left: 500px;
+}
+.page-button{
+    background-color: #D9D9D9;
+    border-radius: 50%;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 10px 20px;
+}
+.page-button:nth-child(1){
+    margin-right: 20px;
+}
+.page-button:nth-child(2){
+    margin-right: 20px;
+}
+.page-button:nth-child(3){
+    margin-right: 20px;
+}
+.page-button:nth-child(4){
+    margin-right: 20px;
+}

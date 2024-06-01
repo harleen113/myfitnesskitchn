@@ -12,46 +12,26 @@
     <title>My Fitness Kitchn</title>
 </head>
 <body>
-    <header>
-        <div class="navbar">
-            <div class="logo"><a href="index.html">My Kitchn Fitness</a></div>
-            <div class="toggle-btn">
+    <nav>
+        <div class="nav-header">
+            <div class="nav-logo">
+                <a href="#">
+                    <img src="photos/logo.png" alt="logo">
+                    <span id="logo-text">My Kitchn Fitness</span>
+                </a>
+            </div>
+            <div class="nav-menu-btn" id="menu-btn"> 
                 <i class="fa-solid fa-bars"></i>
             </div>
-            <ul class="links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="menu.html">Order</a></li>
-                <li><a href="#">Contact us</a></li>
-            </ul>
-            <div class="icons">
-            <a href="shopping-cart.html" class="shopping-cart-btn"><i class="fa-solid fa-bag-shopping"></i></a>
-            <a href="#" class="profile-btn"><i class="fa-solid fa-user"></i></a>
-            </div>
         </div>
-
-        <div class="dropdown-menu">
+        <ul class="nav-links" id= "nav-links">
             <li><a href="index.html">Home</a></li>
             <li><a href="#">About</a></li>
             <li><a href="menu.html">Order</a></li>
-            <li><a href="#">Contact us</a></li>
-        </div>
-    </header>
-
-    <script>
-        const toggleBtn = document.querySelector(".toggle-btn")
-        const toggleBtnIcon = document.querySelector('.toggle-btn i')
-        const dropDownMenu = document.querySelector(".dropdown-menu")
-
-        toggleBtn.onclick = function () {
-            dropDownMenu.classList.toggle('open')
-            const isOpen = dropDownMenu.classList.contains('open')
-
-            toggleBtnIcon.classList = isOpen
-            ? 'fa-solid fa-xmark'
-            : 'fa-solid fa-bars'
-        }
-    </script>
-    
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </nav>
+           
+    <script src="javascript/functions.js"></script>
 </body>
 </html>

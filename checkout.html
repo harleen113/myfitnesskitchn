@@ -6,50 +6,28 @@
     <title>checkout page</title>
     <link rel="stylesheet" href="css/main.css">
 </head>
-<body class="checkout">
+<body>
+<h1 class="checkout">Checkout</h1>
     <!-- progress indicator on the checkout page -->
 <div class ="progress-indicator">
     <div class = "steps">
         <div class = "active">
             <div class ="activesphere">1</div>
-            <div class ="text">Shipping</div>
+            <div class = "connecting-lines line1"></div>
+            <div class ="sphere-text">Shipping</div>
         </div>
         <div class = "inactive">
             <div class ="sphere">2</div>
-            <div class ="text">Payment</div>
+            <div class = "connecting-lines line2"></div>
+            <div class ="sphere-text">Payment</div>
         </div>
         <div class = "inactive">
             <div class ="sphere">3</div>
-            <div class ="text">Review</div>
+            <div class ="sphere-text">Review</div>
         </div>
     </div>
 </div>
-    <!-- order summmary details -->
-    <div class = "Checkout-summary">
-        <section>
-            <h3>Order summary</h3>
-                <ul>
-                    <aside class="order-details">Subtotal:  $56.90</aside>
-                </ul>
-                <ul>
-                <label for="deliveryoptions">Delivery</label>
-                <select name="delivery options" id="delivery">
-                    <option value="Standard">Standard</option>
-                    <option value="fast Shipping">fast shipping</option>
-                </select>
-                </ul>
-                <ul>
-                    <label for="discount">Enter promo code</label>
-                    <input type="text" id="discount" name = "discount">
-                </ul>
-                <hr>
-                <ul>
-                    <aside class="order-details">Total:  $65.89</aside>
-                </ul>
-    
-        </section>
-        </div>
-    <!-- Delivery Address Form -->
+    <!-- Delivery Address Form -->                                             
     <div class = "checkoutpage">
     <h2>Delivery Address</h2>
     <form>
@@ -81,7 +59,28 @@
         <button class = "button-green">Proceed to Payment</button>
         <button class = "button-grey">Back to shopping cart</button>
     </div>
+    </div>
+    <!-- order summmary details -->
+    <div class = "Checkout-summary">
+            <h3>Order Summary</h3>
+                 <ul>
+                    <p>Subtotal:  $56.90</p>
+                <ul>
+                    <label for="deliveryoptions">Delivery</label>
+                    <select name="delivery options" id="delivery">
+                        <option value="Standard">Standard</option>
+                        <option value="fast Shipping">fast shipping</option>
+                    </select>
+                </ul>
+                <ul>
+                        <label for="discount">Enter promo code</label>
+                        <input type="text" id="discount" name = "discount">
+                </ul>
+                <hr>
+                <ul>
+                    <p>Total:  $65.89</p>
+                </ul>
+    </div>    
 
-</div>
 </body>
 </html>

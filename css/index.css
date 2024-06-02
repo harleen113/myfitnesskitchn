@@ -75,19 +75,19 @@ header{
 
 
 section{
-   padding: 5% 5%;
+   padding: 5% 5% 0 5%;
 }
 
 .main-home{
    margin-top: 5rem;
    width: 100%;
-   height: 90vh;
+   height: 80vh;
    background-image: url(landing-page.png);
    background-position: center;
    background-size: cover;
    display: grid;
    grid-template-columns: repeat(1, 1fr);
-   align-items: ;
+   align-items: center;
 
 }
 
@@ -115,7 +115,7 @@ section{
    font-size: 16px;
    font-weight: 500;
    text-transform: capitalize;
-   margin-top: 42px;
+
    padding: 18px 36px;
    transition: all .42s ease;
 }
@@ -137,30 +137,96 @@ header.sticky{
 }
 
 
-@media(max-width: 890px){
-   header{
-      padding: 20px 3%;
-      transition: .4s; 
-   }
+
+.info{
+   width: 100%;
+   max-width: 1428px;
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   grid-gap: 50px 30px;
+   align-items: center;
 }
 
-@media (max-width: 63px){
-   .main-text h1{
-      font-size: 50px;
-      transition: .4s;
-   }
 
-   .main-text p {
-      font-size: 18px;
-      transition: .4s;
-   }
+.info .left{
+   overflow: hidden;
+}
 
-   .main-btn{
-      padding: 10px 20px;
-      transition: .4s;
-   }
+.info .left img{
+   width: 100%;
+   object-fit: cover;
+   border-radius: 0.5rem;
+   margin-right: 1rem;
+     
+}
+
+.info .right .content{
+   padding-left: 20px;
 
 }
+
+
+.info .right h1{
+   font-weight: 300;
+   font-size: 3rem;
+   margin-bottom: 2rem;
+}
+
+.info .right p{
+   font-weight: 300;
+   font-size: 1.2rem;
+   margin-bottom: 2rem;
+}
+
+.all-products{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-wrap: wrap;
+}
+
+.product{
+   
+   background: #ffffff;
+   color: black;
+   text-align: center; 
+   
+   padding: 1rem;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border-radius: 1.2rem;
+   margin: 1rem;
+   transform: all 0.3s;
+   border: 1px solid black
+}
+
+.product-info .label, p{
+   padding: 1rem;
+}
+
+.product:hover img{
+   scale: 1.1;
+}
+
+.product:hover{
+   box-shadow: 5px 15px 25px white;
+}
+
+.product img{
+   height: 240px;
+   margin: 0.5rem;
+   transition: all 0.3s;
+}
+
+.products h1{
+   
+      font-size: 3rem;
+      font-weight: 300;
+      text-align: center;
+   }
+
+
 
 @media(max-width: 750px){
    .navmenu{
@@ -178,6 +244,21 @@ header.sticky{
 
    }
 
+   header{
+      padding: 20px 3%;
+      transition: .4s; 
+   }
+
+   .info{
+      width: 100%;
+      grid-template-columns: 1fr;
+   }
+
+   .info .right .content{
+      padding-left: 0;
+   
+   }
+
    .navmenu a{
       display: block;
       margin: 18px 0;
@@ -190,5 +271,14 @@ header.sticky{
 
    #menu-icon{
       display: block;
-   }
+   }  
+
+   /*.products ul, button, .quantity {
+      display: none;
+   }*/
+   
+
+   
 }
+   
+

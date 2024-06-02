@@ -51,8 +51,9 @@
         }
     </script>
 
-    <h1>Shopping Cart</h1>
+    <h1 class="shopping-page">SHOPPING CART</h1>
     <!--shopping cart page product list-->
+    <div class="shopping">
     <table class = "shopping-list">
         <tr>
             <th> Product Details</th>
@@ -76,33 +77,38 @@
         </tr>
     </table>
      <!-- order summmary details on the shopping cart page-->
-     <div class = "Checkout-summary">
-        <section>
-            <h3>Order summary</h3>
-                <ul>
-                    <aside class="order-details">Subtotal:  $56.90</aside>
+     <div class = "shopping-summary">
+            <h3 class="order-summary">Order summary</h3>
+                <ul class="Subtotal">
+                    Subtotal:  
                 </ul>
-                <ul>
-                <label for="deliveryoptions">Delivery</label>
-                <select name="delivery options" id="delivery">
+                <ul class="cost-3">
+                    $56.90
+                </ul>
+                <ul class="delivery">
+                <label for="deliveryoptions">Delivery:</label>
+                <select name="delivery options" class="options">
                     <option value="Standard">Standard</option>
                     <option value="fast Shipping">fast shipping</option>
                 </select>
                 </ul>
-                <ul>
-                    <label for="discount">Enter promo code</label>
-                    <input type="text" id="discount" name = "discount">
+                <ul class="discount">
+                    <label for="discount">Discount:</label>
+                    <input type="text" class="promo-code" placeholder="Enter promo code here">
                 </ul>
-                <hr>
-                <ul>
-                    <aside class="order-details">Total:  $65.89</aside>
-                </ul>   
-        </section>
-        </div> 
-        <!-- Shopping Cart page buttons -->
+                <div class="line-between"><hr></div>
+                <ul class="Total">
+                    Total:  
+                </ul>
+                <ul class="cost-2">
+                    $65.89
+                </ul>
+    <!-- Shopping Cart buttons -->
     <div class="checkoutpage-buttons">
-        <button class = "grey-button">Back to Shopping</button>
         <button class = "green-button">Checkout</button>
+        <button class = "grey-button">Back to Shopping</button>
+    </div> 
+    </div> 
     </div>
 </body>
 </html>

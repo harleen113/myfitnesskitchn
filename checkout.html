@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-<h1 class="checkout">Checkout</h1>
+<h1 class="checkout">CHECKOUT</h1>
     <!-- progress indicator on the checkout page -->
 <div class ="progress-indicator">
     <div class = "steps">
@@ -60,26 +60,32 @@
         <button class = "button-grey">Back to shopping cart</button>
     </div>
     </div>
-    <!-- order summmary details -->
+    <!-- order summmary -->
     <div class = "Checkout-summary">
             <h3 class="order-summary">Order Summary</h3>
                 <ul class="Subtotal">
-                    Subtotal:  $56.90
+                    Subtotal: 
+                </ul>
+                <ul class="cost-1">
+                    $56.90
                 </ul>
                 <ul class="delivery">
-                    <label for="deliveryoptions">Delivery</label>
-                    <select name="delivery options" id="delivery">
+                    <label for="deliveryoptions">Delivery:</label>
+                    <select name="delivery options" class="options">
                         <option value="Standard">Standard</option>
                         <option value="fast Shipping">fast shipping</option>
                     </select>
                 </ul>
                 <ul class="discount">
-                        <label for="discount">Enter promo code</label>
-                        <input type="text" id="discount" name = "discount">
+                        <label for="discount">Discount:</label>
+                        <input type="text" class="promo-code" placeholder="Enter promo code here">
                 </ul>
                 <hr>
                 <ul class="Total">
-                    Total:  $65.89
+                    Total: 
+                </ul>
+                <ul class="cost-2">
+                    $65.89
                 </ul>
     </div>    
 

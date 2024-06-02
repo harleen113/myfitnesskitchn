@@ -143,9 +143,10 @@ header.sticky{
    max-width: 1428px;
    display: grid;
    grid-template-columns: repeat(2, 1fr);
-   grid-gap: 50px 30px;
+   grid-gap: 20px 30px;
    align-items: center;
 }
+
 
 
 .info .left{
@@ -178,11 +179,17 @@ header.sticky{
    margin-bottom: 2rem;
 }
 
+.products{
+   background-color: #3EB489;
+   margin-top: 2rem;
+}
+
 .all-products{
    display: flex;
    align-items: center;
    justify-content: center;
    flex-wrap: wrap;
+   
 }
 
 .product{
@@ -198,10 +205,10 @@ header.sticky{
    border-radius: 1.2rem;
    margin: 1rem;
    transform: all 0.3s;
-   border: 1px solid black
+   box-shadow:  5px 5px 5px rgba(0, 0, 0, 0.1);
 }
 
-.product-info .label, p{
+.product-info .label, .product-info p{
    padding: 1rem;
 }
 
@@ -209,9 +216,6 @@ header.sticky{
    scale: 1.1;
 }
 
-.product:hover{
-   box-shadow: 5px 15px 25px white;
-}
 
 .product img{
    height: 240px;
@@ -219,12 +223,161 @@ header.sticky{
    transition: all 0.3s;
 }
 
+.product select{
+   border-radius: 30px;
+   padding: 0.2rem 0.4rem;
+   justify-content: right;
+   margin-left: 2rem;
+}
 .products h1{
    
       font-size: 3rem;
       font-weight: 300;
       text-align: center;
    }
+
+   *{
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+  }
+  footer{
+      background-color:#3EB489;
+  }
+  .footerContainer{
+      margin-top: 20px;
+      width: 100%;
+      padding: 20px 30px 0 ;
+  }
+  .socialIcons{
+      display: flex;
+      justify-content: center;
+  }
+  .socialIcons a{
+      text-decoration: none;
+      padding:  10px;
+      margin: 10px;
+      border-radius: 50%;
+  }
+  .socialIcons a i{
+      font-size: 1.5em;
+      color: white;
+      opacity: 0,9;
+  }
+
+  .footerNav{
+      margin: 20px 0;
+  }
+  .footerNav ul{
+      display: flex;
+      justify-content: center;
+      list-style-type: none;
+  }
+  .footerNav ul li a{
+      color:white;
+      margin: 10px 50px;
+      text-decoration: none;
+      font-weight: 200;
+      font-size: 1em;
+      opacity: 0.7;
+      transition: 0.5s;
+  
+  }
+  .footerNav ul li a:hover{
+      opacity: 1;
+  }
+  .footerBottom{
+      background-color:#3EB489;
+      padding: 10px;
+      text-align: center;
+  }
+  .footerBottom p{
+      color: white;
+  }
+  .designer{
+      opacity: 0.7;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-weight: 400;
+      margin: 0px 5px;
+  }
+
+  .reviews {
+   width: 100%;
+   max-width: 1200px;
+   margin: auto;
+   padding: 1rem;
+   text-align: center;
+ }
+ 
+ .reviews h1{
+   font-weight: 300;
+   font-size: 3rem;
+   margin: 1rem;
+ }
+ .header {
+   margin-bottom: 2rem;
+ }
+ 
+ .header p {
+   letter-spacing: 2px;
+   font-size: 1rem;
+   font-weight: 500;
+ }
+ 
+ .header h1 {
+   font-family: "Noto Serif", serif;
+   font-size: 2rem;
+   font-weight: 900;
+ }
+ 
+ .reviews-grid {
+   width: 100%;
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   gap: 1rem;
+   margin-bottom: 2rem;
+ }
+ 
+ .card {
+   padding: 1rem;
+   display: grid;
+   gap: 1rem;
+   background-color: var(--extra-light);
+   border-radius: 5px;
+   box-shadow:  5px 5px 5px 5px rgba(0, 0, 0, 0.1);
+   cursor: pointer;
+ }
+
+ .card .name{
+   padding: 0;
+ }
+
+ 
+ .card p {
+   font-size: 1rem;
+   font-weight: 500;
+ }
+ 
+ .card hr {
+   width: 40px;
+   color: var(--text-light);
+ }
+ 
+ .card img {
+   width: 90px;
+   height: 90px;
+   margin: auto;
+   border-radius: 100%;
+   border: 1px solid var(--primary-color);
+ }
+ 
+ .card .name {
+   font-size: 0.9rem;
+   font-weight: 400;
+   color: var(--text-light);
+   transition: 0.3s;
+ }
 
 
 
@@ -276,9 +429,31 @@ header.sticky{
    /*.products ul, button, .quantity {
       display: none;
    }*/
+
+    .footerNav ul{
+        flex-direction: column;
+    } 
+    .footerNav ul li{
+        width:100%;
+        text-align: center;
+        margin: 10px;
+    }
+    .socialIcons a{
+        padding: 8px;
+        margin: 4px;
+    }
+    
+    
+      .reviews-grid {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1rem;
+      }
+    
+    
+
+    
+}
    
 
-   
-}
    
 

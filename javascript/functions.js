@@ -1,17 +1,15 @@
-const menuBtn = document.getElementById("menu-btn");
-const navLinks = document.getElementById("nav-links");
-const menuBtnIcon = menuBtn.querySelector("i");
+const header = document.querySelector("header");
 
-menuBtn.addEventListener("click", (e) => {
-    navLinks.classList.toggle("open");
+window.addEventListener("scroll", function(){
+    header.classList.toggle("sticky", this.window.scrollY > 0);
+})
 
-    const isOpen = navLinks.classList.contains("open");
-    menuBtnIcon.setAttribute("class", isOpen ? "fa-solid fa-xmark" : "fa-solid fa-bars")
-});
 
-navLinks.addEventListener("click", (e) => {
-    navLinks.classList.remove("open");
-    menuBtnIcon.setAttribute("class", "fa-solid fa-bars");
+let menu = document.querySelector("#menu-icon");
+let navmenu = document.querySelector(".navmenu");
 
-});
+menu.onclick = () => {
+    menu.classList.toggle('bx-x');
+    navmenu.classList.toggle('open');
+}
 

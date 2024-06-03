@@ -4,52 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
-    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" 
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+   
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <link rel="stylesheet" href="css/main.css">
 </head>
-<body>
-    <header>
-        <div class="navbar">
-            <div class="logo"><a href="index.html">My Kitchn Fitness</a></div>
-            <div class="toggle-btn">
-                <i class="fa-solid fa-bars"></i>
-            </div>
-            <ul class="links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="menu.html">Order</a></li>
-                <li><a href="#">Contact us</a></li>
-            </ul>
-            <div class="icons">
-            <a href="shopping-cart.html" class="shopping-cart-btn"><i class="fa-solid fa-bag-shopping"></i></a>
-            <a href="#" class="profile-btn"><i class="fa-solid fa-user"></i></a>
-            </div>
-        </div>
 
-        <div class="dropdown-menu">
-            <li><a href="index.html">Home</a></li>
+
+<body>
+
+    <header>
+        <a href="#" class="logo"><img src="photos/full-logo.png" alt=""></a>
+        <ul class="navmenu">
+            <li><a href="#">Home</a></li>
             <li><a href="#">About</a></li>
             <li><a href="menu.html">Order</a></li>
-            <li><a href="#">Contact us</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+
+        <div class="nav-icon">
+            <a href=""><i class="bx bx-search"></i></a>
+            <a href=""><i class="bx bx-user"></i></a>
+            <a href=""><i class="bx bx-cart"></i></a>
+
+            <div class="bx bx-menu" id="menu-icon"></div>
+
         </div>
-    </header>
-
-    <script>
-        const toggleBtn = document.querySelector(".toggle-btn")
-        const toggleBtnIcon = document.querySelector('.toggle-btn i')
-        const dropDownMenu = document.querySelector(".dropdown-menu")
-
-        toggleBtn.onclick = function () {
-            dropDownMenu.classList.toggle('open')
-            const isOpen = dropDownMenu.classList.contains('open')
-
-            toggleBtnIcon.classList = isOpen
-            ? 'fa-solid fa-xmark'
-            : 'fa-solid fa-bars'
-        }
-    </script>
+    </header>  
+    
     <h1 class="menu-heading">MENU</h1>
     <!--search bar-->
     <div class="search-option">
@@ -87,201 +72,139 @@
             <td>Bulk Me Up</td>
             <td>Treat</td>
         </tr>
+
     </table>
     <!--items listed on the menu page-->
-    <div class="menu-products">
-    <div class="item1">
-    <h4>Mediterranean Lamb bowl</h4> 
-    <img src="https://www.myfitnesskitchn.com.au/wordpress/wp-content/uploads/2024/02/lamb-hommus-main-1.jpg" alt="Mediterranean Lamb bowl" style="width:200px;height:200px;">
-    <div class="item1-info">
-    <h4>$11.95</h4>
-    <ul>
-        <label for="meat">Choose Your Meat:</label>
-        <select name="meat" id="meat">
-            <option value="Lamb">Lamb</option>
-            <option value="Chicken">Chicken</option>
-            <option value="Fish">Fish</option>
-            <option value="Prawn">Prawn</option>
-        </select>
-    </ul>
-    <p class="quantity">Quantity:<button class = "menu-minus-button">-</button>1<button class = "menu-plus-button">+</button></p>
-    <button class = "Add-button">Add To Cart</button>
-    </div>
-    </div>
+    <section class="products">
+        <h1>
+            TOP THREE MEALS
+        </h1>
+        <div class="all-products">
+        <div class ="product"> 
+            <div class="product-info">
+                <h4 class="product-title"> Thai Basil Chicken
+                </h4>
+                <img src="photos/Thai+Basil+Chicken.png" alt="">
+                <p class="product-price">$15.95</p>
+                <ul>
+                    <label for="meat">Choose Your Meat:</label>
+                    <select name="meat" id="meat">
+                        <option value="Lamb">Lamb</option>
+                        <option value="Chicken">Chicken</option>
+                        <option value="Fish">Fish</option>
+                        <option value="Prawn">Prawn</option>
+                    </select>
+                </ul>
+                <p class="quantity">Quantity:<button class = "menu-minus-button">-</button>1<button class = "menu-plus-button">+</button></p>
+                <button class = "Add-button">Add To Cart</button>
+                
+            </div>    
+        </div>
 
-    <div class="item2">
-    <h4>Chicken Risotto in Red Sauce</h4> 
-    <img src="https://www.myfitnesskitchn.com.au/wordpress/wp-content/uploads/2022/11/parmigiana-mash-23.jpg" alt="Chicken Risotto in Red Sauce" style="width:200px;height:200px;">
-    <div class="item2-info">
-    <h4>$11.95</h4>
-    <ul>
-        <label for="meat">Choose Your Meat:</label>
-        <select name="meat" id="meat">
-            <option value="Lamb">Lamb</option>
-            <option value="Chicken">Chicken</option>
-            <option value="Fish">Fish</option>
-            <option value="Prawn">Prawn</option>
-        </select>
-    </ul>
-    <p class="quantity">Quantity:<button class = "menu-minus-button">-</button>1<button class = "menu-plus-button">+</button></p>
-    <button class = "Add-button">Add To Cart</button>
-    </div>
-    </div>
+        <div class ="product"> 
+            <div class="product-info">
+                <h4 class="product-title"> Chicken Biryani
+                </h4>
+                <img src="photos/chicken biryani.png" alt="">
+                <p class="product-price">$25.95</p>
+                <ul>
+                    <label for="meat">Choose Your Meat:</label>
+                    <select name="meat" id="meat">
+                        <option value="Lamb">Lamb</option>
+                        <option value="Chicken">Chicken</option>
+                        <option value="Fish">Fish</option>
+                        <option value="Prawn">Prawn</option>
+                    </select>
+                </ul>
+                <p class="quantity">Quantity:<button class = "menu-minus-button">-</button>1<button class = "menu-plus-button">+</button></p>
+                <button class = "Add-button">Add To Cart</button>
+                
+            </div>    
+        </div>
 
-    <div class="item3">
-    <h4>Vegetable hokkien noodles</h4> 
-    <img src="https://www.myfitnesskitchn.com.au/wordpress/wp-content/uploads/2018/01/hokkien-new-1.jpg" alt="Vegetable hokkien noodles" style="width:200px;height:200px;">
-    <div class="item3-info">
-    <h4>$11.95</h4>
-    <ul>
-        <label for="meat">Choose Your Meat:</label>
-        <select name="meat" id="meat">
-            <option value="Lamb">Lamb</option>
-            <option value="Chicken">Chicken</option>
-            <option value="Fish">Fish</option>
-            <option value="Prawn">Prawn</option>
-        </select>
-    </ul>
-    <p class="quantity">Quantity:<button class = "menu-minus-button">-</button>1<button class = "menu-plus-button">+</button></p>
-    <button class = "Add-button">Add To Cart</button>
-    </div>
-    </div>
-    
-    <div class="item4">
-    <h4>Japanese steak bowl</h4> 
-    <img src="https://www.myfitnesskitchn.com.au/wordpress/wp-content/uploads/2023/10/jap-pic-1.jpg" alt="Japanese steak bowl" style="width:200px;height:200px;">
-    <div class="item4-info">
-    <h4>$11.95</h4>
-    <ul>
-        <label for="meat">Choose Your Meat:</label>
-        <select name="meat" id="meat">
-            <option value="Lamb">Lamb</option>
-            <option value="Chicken">Chicken</option>
-            <option value="Fish">Fish</option>
-            <option value="Prawn">Prawn</option>
-        </select>
-    </ul>
-    <p class="quantity">Quantity:<button class = "menu-minus-button">-</button>1<button class = "menu-plus-button">+</button></p>
-    <button class = "Add-button">Add To Cart</button>
-    </div>
-    </div>
-    
-    <div class="item5">
-    <h4>Chicken parmesan katsu curry</h4> 
-    <img src="https://www.myfitnesskitchn.com.au/wordpress/wp-content/uploads/2023/11/katsu-pic-1.jpg" alt="Chicken parmesan katsu curry" style="width:200px;height:200px;">
-    <div class="item5-info">
-    <h4>$11.95</h4>
-    <ul>
-        <label for="meat">Choose Your Meat:</label>
-        <select name="meat" id="meat">
-            <option value="Lamb">Lamb</option>
-            <option value="Chicken">Chicken</option>
-            <option value="Fish">Fish</option>
-            <option value="Prawn">Prawn</option>
-        </select>
-    </ul>
-    <p class="quantity">Quantity:<button class = "menu-minus-button">-</button>1<button class = "menu-plus-button">+</button></p>
-    <button class = "Add-button">Add To Cart</button>
-    </div>
-    </div>
+        <div class ="product"> 
+            <div class="product-info">
+                <h4 class="product-title"> Hokkein Noodles</h4>
+                <img src="photos/hokkein noodles.png" alt="">
+                <p class="product-price">$25.95</p>
+                <ul>
+                    <label for="meat">Choose Your Meat:</label>
+                    <select name="meat" id="meat">
+                        <option value="Lamb">Lamb</option>
+                        <option value="Chicken">Chicken</option>
+                        <option value="Fish">Fish</option>
+                        <option value="Prawn">Prawn</option>
+                    </select>
+                </ul>
+                <p class="quantity">Quantity:<button class = "menu-minus-button">-</button>1<button class = "menu-plus-button">+</button></p>
+                <button class = "Add-button">Add To Cart</button>
+                
+            </div>    
+        </div>
 
+        <div class ="product"> 
+            <div class="product-info">
+                <h4 class="product-title"> Hokkein Noodles</h4>
+                <img src="photos/hokkein noodles.png" alt="">
+                <p class="product-price">$25.95</p>
+                <ul>
+                    <label for="meat">Choose Your Meat:</label>
+                    <select name="meat" id="meat">
+                        <option value="Lamb">Lamb</option>
+                        <option value="Chicken">Chicken</option>
+                        <option value="Fish">Fish</option>
+                        <option value="Prawn">Prawn</option>
+                    </select>
+                </ul>
+                <p class="quantity">Quantity:<button class = "menu-minus-button">-</button>1<button class = "menu-plus-button">+</button></p>
+                <button class = "Add-button">Add To Cart</button>
+                
+            </div>    
+        </div>
 
-    <div class="item6">
-    <h4>Chicken basil pesto spaghetti</h4> 
-    <img src="https://www.myfitnesskitchn.com.au/wordpress/wp-content/uploads/2016/05/DSC09607.jpg" alt="Chicken basil pesto spaghetti" style="width:200px;height:200px;">
-    <div class="item6-info">
-    <h4>$11.95</h4>
-    <ul>
-        <label for="meat">Choose Your Meat:</label>
-        <select name="meat" id="meat">
-            <option value="Lamb">Lamb</option>
-            <option value="Chicken">Chicken</option>
-            <option value="Fish">Fish</option>
-            <option value="Prawn">Prawn</option>
-        </select>
-    </ul>
-    <p class="quantity">Quantity:<button class = "menu-minus-button">-</button>1<button class = "menu-plus-button">+</button></p>
-    <button class = "Add-button">Add To Cart</button>
-    </div>
-    </div>
-    
-    <div class="item7">
-    <h4>Parmesan crusted chicken with pesto risotto</h4> 
-    <img src="https://www.myfitnesskitchn.com.au/wordpress/wp-content/uploads/2019/06/pesto-risotto-1.jpg" alt="Parmesan crusted chicken with pesto risotto" style="width:200px;height:200px;">
-    <div class="item7-info">
-    <h4>$11.95</h4>
-    <ul>
-        <label for="meat">Choose Your Meat:</label>
-        <select name="meat" id="meat">
-            <option value="Lamb">Lamb</option>
-            <option value="Chicken">Chicken</option>
-            <option value="Fish">Fish</option>
-            <option value="Prawn">Prawn</option>
-        </select>
-    </ul>
-    <p class="quantity">Quantity:<button class = "menu-minus-button">-</button>1<button class = "menu-plus-button">+</button></p>
-    <button class = "Add-button">Add To Cart</button>
-    </div>
-    </div>
+        <div class ="product"> 
+            <div class="product-info">
+                <h4 class="product-title"> Hokkein Noodles</h4>
+                <img src="photos/hokkein noodles.png" alt="">
+                <p class="product-price">$25.95</p>
+                <ul>
+                    <label for="meat">Choose Your Meat:</label>
+                    <select name="meat" id="meat">
+                        <option value="Lamb">Lamb</option>
+                        <option value="Chicken">Chicken</option>
+                        <option value="Fish">Fish</option>
+                        <option value="Prawn">Prawn</option>
+                    </select>
+                </ul>
+                <p class="quantity">Quantity:<button class = "menu-minus-button">-</button>1<button class = "menu-plus-button">+</button></p>
+                <button class = "Add-button">Add To Cart</button>
+                
+            </div>    
+        </div>
 
-    <div class="item8">
-    <h4>Beef mince in napolitana sauce with spaghetti</h4> 
-    <img src="https://www.myfitnesskitchn.com.au/wordpress/wp-content/uploads/2017/05/beef-mince-spaghetti.jpg" alt="Beef mince in napolitana sauce with spaghetti" style="width:200px;height:200px;">
-    <div class="item8-info">
-    <h4>$11.95</h4>
-    <ul>
-         <label for="meat">Choose Your Meat:</label>
-         <select name="meat" id="meat">
-            <option value="Lamb">Lamb</option>
-            <option value="Chicken">Chicken</option>
-            <option value="Fish">Fish</option>
-            <option value="Prawn">Prawn</option>
-        </select>
-        </ul>
-    <p class="quantity">Quantity:<button class = "menu-minus-button">-</button>1<button class = "menu-plus-button">+</button></p>
-    <button class = "Add-button">Add To Cart</button>
+        <div class ="product"> 
+            <div class="product-info">
+                <h4 class="product-title"> Hokkein Noodles</h4>
+                <img src="photos/hokkein noodles.png" alt="">
+                <p class="product-price">$25.95</p>
+                <ul>
+                    <label for="meat">Choose Your Meat:</label>
+                    <select name="meat" id="meat">
+                        <option value="Lamb">Lamb</option>
+                        <option value="Chicken">Chicken</option>
+                        <option value="Fish">Fish</option>
+                        <option value="Prawn">Prawn</option>
+                    </select>
+                </ul>
+                <p class="quantity">Quantity:<button class = "menu-minus-button">-</button>1<button class = "menu-plus-button">+</button></p>
+                <a href="shopping-cart.html"><button class = "Add-button">Add To Cart</button></a>
+                
+            </div>    
+        </div>
+         
     </div>
-    </div>
+</section>
 
-    <div class="item9">
-    <h4>Brekky egg wrap</h4> 
-    <img src="https://www.myfitnesskitchn.com.au/wordpress/wp-content/uploads/2018/12/brekky-wrap-3.jpg" alt="Brekky egg wrap" style="width:200px;height:200px;">
-    <div class="item9-info">
-    <h4>$11.95</h4>
-    <ul>
-        <label for="meat">Choose Your Meat:</label>
-        <select name="meat" id="meat">
-            <option value="Lamb">Lamb</option>
-            <option value="Chicken">Chicken</option>
-            <option value="Fish">Fish</option>
-            <option value="Prawn">Prawn</option>
-        </select>
-    </ul>
-    <p class="quantity">Quantity:<button class = "menu-minus-button">-</button>1<button class = "menu-plus-button">+</button></p>
-    <button class = "Add-button">Add To Cart</button>
-    </div>
-    </div>
-  
-    <div class="item10">
-    <h4>Salmon teriyaki bowl</h4> 
-    <img src="https://www.myfitnesskitchn.com.au/wordpress/wp-content/uploads/2020/01/salmon-2.jpg" alt="Salmon teriyaki bowl" style="width:200px;height:200px;">
-    <div class="item10-info">
-    <h4>$11.95</h4>
-    <ul>
-        <label for="meat">Choose Your Meat:</label>
-        <select name="meat" id="meat">
-            <option value="Lamb">Lamb</option>
-            <option value="Chicken">Chicken</option>
-            <option value="Fish">Fish</option>
-            <option value="Prawn">Prawn</option>
-        </select>
-    </ul>
-    <p class="quantity">Quantity:<button class = "menu-minus-button">-</button>1<button class = "menu-plus-button">+</button></p>
-    <button class = "Add-button">Add To Cart</button>
-    </div>
-    
-    </div>
-    </div>
     <!--pages button on the bottom of the menu page-->
     <div class="page-number">
         <button class="page-button">&lt;</button>
@@ -291,4 +214,28 @@
         <button class="page-button">&gt;</button>
     </div>  
 </body>
+
+<footer>
+    <div class="footerContainer">
+        <div class="socialIcons">
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+            <a href=""><i class="fa-brands fa-google-plus"></i></a>
+            <a href=""><i class="fa-brands fa-youtube"></i></a>
+        </div>
+        <div class="footerNav">
+            <ul><li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Order</a></li>
+                <li><a href="">Contact us</a></li>
+            </ul>
+        </div>
+        
+    </div>
+    <div class="footerBottom">
+        <p>Copyright &copy;2023; <span class="designer">MyFitnessKitchn</span></p>
+    </div>
+</footer>
+<script src="javascript/functions.js"></script>
 </html>

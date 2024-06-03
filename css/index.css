@@ -192,6 +192,10 @@ header.sticky{
    
 }
 
+.all-products a:visited{
+   color: black;
+}
+
 .product{
    
    background: #ffffff;

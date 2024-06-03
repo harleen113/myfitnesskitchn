@@ -9,24 +9,25 @@ body {
 
 .shopping-cart {
     display: flex;
-    width: 90%;
-    max-width: 600px;
-    margin: 20px;
-    padding: 10px;
+    justify-content: center;
+    width: 100%;  
 }
 
 h1 {
-    text-align: left;
-    margin: 80px 20px 30px;
+    justify-content: left;
+    margin: 5rem 0rem 2rem 15rem;
 }
 
 .cart-items {
-    border: 1px solid #ddd;
+    border: 1px solid black;
     border-radius: 10px;
     overflow: hidden;
+    padding: 1rem;
+    margin: 0 2rem;
 }
 
 .cart-item {
+
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -35,11 +36,23 @@ h1 {
     justify-content: center;
 }
 
+.cart-item .delete{
+   font-family: Arial;
+    background-color: rgb(245, 77, 77);
+    border: none;
+    border-radius: 2rem;
+    padding: 0.2rem 0.4rem;
+}
+.cart-item .title{
+    margin: 10px 20px;
+}
+
 .cart-item:last-child {
     border-bottom: none;
 }
 
 .cart-item .box{
+    margin: 1rem;
     background-color: #3EB489;
     padding: 0.2rem;
     border-radius: 10px;
@@ -67,6 +80,7 @@ h1 {
 .quantity {
     display: flex;
     align-items: center;
+    margin: 10px, 40px;
 }
 
 .quantity button {
@@ -90,9 +104,8 @@ h1 {
 .order-summary {
     margin-top: 20px 20px;
     padding: 10px;
-    border: 1px solid #ddd;
     border-radius: 10px;
-    text-align: center;
+    text-align: left;
 }
 
 .order-summary h2 {
@@ -103,32 +116,76 @@ h1 {
     margin: 10px 0;
 }
 
+.order-summary input{
+    border-radius: 1rem;
+    padding: 0.5rem 2rem 0.5rem;
+    margin: 2rem 0rem 2rem 1rem;
+    justify-content: left;
+}
+
 .checkout-btn, .back-btn {
     width: 100%;
     padding: 10px;
     margin: 5px 0;
     border: none;
     cursor: pointer;
+    border-radius: 2rem;
 }
 
 .checkout-btn {
-    background-color: #28a745;
+    background-color:#3EB489;
     color: white;
 }
 
 .back-btn {
-    background-color: #ffc107;
+    background-color: lightgray;
     color: white;
 }
+
+.quantity{
+    margin-left: 1.2rem;
+}
+
+
+.quantity button{
+    border-radius: 3rem;
+    padding: 6px 10px;
+}
+
+.quantity button{
+    border-radius: 3rem;
+    padding: 6px 10px;
+}
+
 
 @media (max-width: 680px) {
     .shopping-cart{
         flex-direction: column;
-        align-items: center;
+        align-items: left;
     }
-    .cart-item {
-        flex-direction: column;
-        align-items: flex-start;
+
+    h1 {
+        justify-content: left;
+        margin: 5rem 0rem 2rem 2rem;
+    }
+
+    .cart-items {
+        margin-bottom: 3rem;
+    }
+
+    .checkout-btn, .back-btn {
+        width: 100%;
+        padding: 1.2rem 2rem;
+        margin: 5px 0;
+        border: none;
+        cursor: pointer;
+        border-radius: 2rem;
+        font-size: 1.2rem;
+    }
+
+    .order-summary{
+        margin: 2rem;
+        font-size: 1.2rem;
     }
 
     .price {

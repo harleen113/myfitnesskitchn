@@ -251,7 +251,7 @@ header.sticky{
   .footerContainer{
       margin-top: 20px;
       width: 100%;
-      padding: 20px 30px 0 ;
+   
   }
   .socialIcons{
       display: flex;
@@ -270,16 +270,17 @@ header.sticky{
   }
 
   .footerNav{
-      margin: 20px 0;
+      margin: 5px 0;
   }
   .footerNav ul{
       display: flex;
       justify-content: center;
       list-style-type: none;
+      padding-bottom: 0.5rem;
   }
   .footerNav ul li a{
       color:white;
-      margin: 10px 50px;
+      margin: 10px 30px;
       text-decoration: none;
       font-weight: 200;
       font-size: 1em;
@@ -303,7 +304,8 @@ header.sticky{
       text-transform: uppercase;
       letter-spacing: 1px;
       font-weight: 400;
-      margin: 0px 5px;
+      margin: 5px 5px;
+      
   }
 
   .reviews {

@@ -28,3 +28,17 @@ function openTab(evt, tabName) {
   }
 
   document.getElementsByClassName("tablinks")[0].click();
+  function validateForm() {
+    let valid = true;
+    const fields = ['firstName', 'lastName', 'streetAddress', 'city', 'state', 'postCode'];
+    fields.forEach(field => {
+      const input = document.getElementById(field);
+      if (input.value.trim() === '') {
+        input.style.borderColor = 'red';
+        valid = false;
+      } else {
+        input.style.borderColor = '#ddd';
+      }
+    });
+    return valid;
+  }

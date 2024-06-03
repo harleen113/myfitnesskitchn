@@ -779,11 +779,7 @@ hr{
 }
 
 /* page button in menu page*/
-.page-number{
-    display: flex;
-    position: absolute;
-    margin-left: 500px;
-}
+
 .page-button{
     background-color: #D9D9D9;
     border-radius: 50%;

@@ -182,6 +182,7 @@ header.sticky{
 .products{
    background-color: #3EB489;
    margin-top: 2rem;
+   padding-bottom: 2rem;
 }
 
 .all-products{
@@ -192,8 +193,14 @@ header.sticky{
    
 }
 
+
 .all-products a:visited{
    color: black;
+}
+
+
+.products{
+   justify-content: center;
 }
 
 .product{
@@ -249,7 +256,7 @@ header.sticky{
       background-color:#3EB489;
   }
   .footerContainer{
-      margin-top: 20px;
+      
       width: 100%;
    
   }

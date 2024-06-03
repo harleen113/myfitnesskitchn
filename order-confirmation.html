@@ -8,30 +8,23 @@
 </head>
 <body class = "order">
     <header>
-        <div class="navbar">
-            <div class="logo"><a href="index.html">My Kitchn Fitness</a></div>
-            <div class="toggle-btn">
-                <i class="fa-solid fa-bars"></i>
-            </div>
-            <ul class="links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="menu.html">Order</a></li>
-                <li><a href="#">Contact us</a></li>
-            </ul>
-            <div class="icons">
-            <a href="shopping-cart.html" class="shopping-cart-btn"><i class="fa-solid fa-bag-shopping"></i></a>
-            <a href="#" class="profile-btn"><i class="fa-solid fa-user"></i></a>
-            </div>
-        </div>
-
-        <div class="dropdown-menu">
+        <a href="#" class="logo"><img src="photos/full-logo.png" alt=""></a>
+        <ul class="navmenu">
             <li><a href="index.html">Home</a></li>
             <li><a href="#">About</a></li>
             <li><a href="menu.html">Order</a></li>
-            <li><a href="#">Contact us</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+
+        <div class="nav-icon">
+            <a href=""><i class="bx bx-search"></i></a>
+            <a href=""><i class="bx bx-user"></i></a>
+            <a href=""><i class="bx bx-cart"></i></a>
+
+            <div class="bx bx-menu" id="menu-icon"></div>
+
         </div>
-    </header>
+    </header>  
 
     <script>
         const toggleBtn = document.querySelector(".toggle-btn")

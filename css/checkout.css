@@ -69,51 +69,9 @@
     flex-wrap: wrap;
     gap: 30px;
   }
-  
-  .progress-bar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    margin-bottom: 10px;
-  }
-  
-  .step {
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    background: #ddd;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1rem;
-    color: white;
-  }
-  
-  .line {
-    width: 30px;
-    height: 2px;
-    background: #ddd;
-  }
-  
-  .step.active {
-    background: #1abc9c;
-  }
-  
-  .progress-labels {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 100px;
-    width: 100%;
-    margin-bottom: 30px;
-  }
-  
-  .label {
-    text-align: center;
-    width: 100px;
-  }
-  
+
+
+
   .delivery-address, .order-summary {
     flex: 1;
   }
